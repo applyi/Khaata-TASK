@@ -1,0 +1,11 @@
+Here is the detailed set up and start the containers for the given yml file
+1. Navigate to the yml file location via terminal
+2. Use " docker-compose build web " command as the given Docker Compose will automatically build the Django image when we start the containers.
+3. " docker-compose up -d " to start the containers
+4. Once the containers are up and running , we can check their status using this command " docker-compose ps " .
+5. The given yml file contains the web service maps port 8000 of the container to port 8000 of your host machine.
+6. Once the containers are running, you can access the Django application in your web browser by going to http://localhost:8000.
+7. Once the the application is launched we can collect timely logs using " docker-compose logs " . 
+
+
+Finally  " docker-compose down " to stop the containers
