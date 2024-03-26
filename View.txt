@@ -1,0 +1,7 @@
+The Serializer can be used in a view to create a new Book instance, This can be achieved by the following method. 
+1. We should define a class that inherits API_view
+2. By using POST method we can handle the requests.
+3. By creating a new instance of with the data from the request body , We can call Validation method [is_valid]. 
+4. If is_valid() returns True, the data is valid. 
+5. We return a response with the serialized data using the serializer and a status code of 102.
+6. If is_valid() returns false, the data is invalid and status code 200 can be returned.
